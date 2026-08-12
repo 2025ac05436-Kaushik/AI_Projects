@@ -21,13 +21,16 @@ model_choice = st.sidebar.selectbox(
 st.sidebar.markdown("---")
 uploaded_file = st.sidebar.file_uploader("Upload Test Data (test_data.csv)", type=["csv"])
 
-# Dictionary to map choice to filename
+# Get the absolute directory path of where this app.py file lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Safely join the base directory with the model folder and filenames
 model_files = {
-    "Logistic Regression": "model/logistic_regression.joblib",
-    "Decision Tree": "model/decision_tree.joblib",
-    "KNN": "model/knn.joblib",
-    "Naive Bayes": "model/naive_bayes.joblib",
-    "Random Forest": "model/random_forest.joblib"
+    "Logistic Regression": os.path.join(BASE_DIR, "model", "logistic_regression.joblib"),
+    "Decision Tree": os.path.join(BASE_DIR, "model", "decision_tree.joblib"),
+    "KNN": os.path.join(BASE_DIR, "model", "knn.joblib"),
+    "Naive Bayes": os.path.join(BASE_DIR, "model", "naive_bayes.joblib"),
+    "Random Forest": os.path.join(BASE_DIR, "model", "random_forest.joblib")
 }
 
 if uploaded_file is not None:
