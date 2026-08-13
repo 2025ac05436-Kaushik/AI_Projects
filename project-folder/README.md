@@ -1,6 +1,7 @@
 # Machine Learning Assignment 2: Mobile Price Classification
 
-
+**Live Streamlit App:** https://2025ac05436-kaushik-ai-projects-project-folderapp-9f2bmd.streamlit.app/ 
+**GitHub Repository:** https://github.com/2025ac05436-Kaushik/AI_Projects.git 
 
 ## a. Problem Statement
 The objective is to predict the price range of mobile phones (0: Low Cost, 1: Medium Cost, 2: High Cost, 3: Very High Cost) based on their hardware specifications such as battery power, RAM, processor cores, and camera features. This is a multi-class classification problem. 
