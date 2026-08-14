@@ -1,8 +1,5 @@
 # Machine Learning Assignment 2: Mobile Price Classification
 
-**Live Streamlit App:** https://2025ac05436-kaushik-ai-projects-project-folderapp-9f2bmd.streamlit.app/ 
-**GitHub Repository:** https://github.com/2025ac05436-Kaushik/AI_Projects.git 
-
 ## a. Problem Statement
 The objective is to predict the price range of mobile phones (0: Low Cost, 1: Medium Cost, 2: High Cost, 3: Very High Cost) based on their hardware specifications such as battery power, RAM, processor cores, and camera features. This is a multi-class classification problem. 
 
@@ -12,7 +9,11 @@ The model is trained on the "Mobile Price Classification" dataset from Kaggle.
 - **Features:** 20 numerical and categorical features (e.g., `ram`, `battery_power`, `px_width`). 
 - **Size:** 2,000 instances, successfully meeting the assignment's minimum criteria of 12 features and 500 instances.
 
-## c. Models Used & Evaluation Metrics
+## c. GitHub Repository Link
+- **GitHub Repository:** https://github.com/2025ac05436-Kaushik/AI_Projects.git
+- **Live Streamlit App:** https://2025ac05436-kaushik-ai-projects-project-folderapp-9f2bmd.streamlit.app/ 
+
+## d. Models Used & Evaluation Metrics
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -22,7 +23,7 @@ The model is trained on the "Mobile Price Classification" dataset from Kaggle.
 | **Naive Bayes** | 0.8100 | 0.9506 | 0.8113 | 0.8100 | 0.8105 | 0.7468 |
 | **Random Forest (Ensemble)** | 0.8800 | 0.9769 | 0.8796 | 0.8800 | 0.8797 | 0.8400 |
 
-## d. Observations
+## e. Observations
 
 | ML Model Name | Observation about model performance |
 | :--- | :--- |
